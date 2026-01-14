@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языковая школа "IlyaLingua"</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=YOUR_YANDEX_API_KEY&lang=ru_RU" type="text/javascript" defer></script>
+</head>
+<body>
+    <header class="bg-primary text-white shadow-sm">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <span class="fs-4 fw-bold"> 🗣️ IlyaLingua</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Главная</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#courses">Курсы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">О нас</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacts">Контакты</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="profile.html">Личный кабинет</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container mt-3">
+        <div id="notifications"></div>
+    </div>
+
+    <main class="container my-5">
+        <section id="about" class="mb-5">
+            <div class="row align-items-center">
+                <div class="col-lg-6">
+                    <h1 class="display-4 fw-bold mb-4">Добро пожаловать в IlyaLingua</h1>
+                    <p class="lead">Мы предлагаем качественное обучение иностранным языкам для всех уровней подготовки. Наша миссия - сделать изучение языков доступным, интересным и эффективным.</p>
+                    <p>С 2010 года мы помогаем студентам достигать их целей в изучении иностранных языков. Наша команда состоит из опытных преподавателей и репетиторов, которые используют современные методики обучения.</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="https://img.freepik.com/premium-vector/english-language-vector-illustration-featuring-students-studying-foreign-languages-global-communication-elementary-grammar-lessons-background_2175-32274.jpg?semt=ais_hybrid&w=740&q=80" alt="Обучение" class="img-fluid rounded shadow">
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-5">
+            <h2 class="text-center mb-4">Преимущества изучения иностранного языка</h2>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Карьерный рост</h5>
+                            <p class="card-text">Знание иностранных языков открывает новые возможности для карьерного развития и повышает вашу конкурентоспособность на рынке труда.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Развитие мозга</h5>
+                            <p class="card-text">Изучение языков улучшает память, внимание и когнитивные способности, помогает развивать критическое мышление.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Культурное обогащение</h5>
+                            <p class="card-text">Изучение языка позволяет глубже понять культуру, традиции и менталитет других народов.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Путешествия</h5>
+                            <p class="card-text">Знание языка делает путешествия более комфортными и насыщенными, позволяет легко общаться с местными жителями.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Новые знакомства</h5>
+                            <p class="card-text">Владение иностранным языком расширяет круг общения и помогает находить друзей по всему миру.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Доступ к информации</h5>
+                            <p class="card-text">Знание языков открывает доступ к огромному количеству информации, литературы, фильмов и образовательных ресурсов.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="courses" class="mb-5">
+            <h2 class="text-center mb-4">Наши курсы</h2>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Поиск курсов</h5>
+                    <form id="course-search-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="course-name-search" class="form-label">Название курса</label>
+                                <input type="text" class="form-control" id="course-name-search" placeholder="Введите название курса">
+                            </div>
+                            <div class="col-md-6">
+                                <label for="course-level-search" class="form-label">Уровень</label>
+                                <select class="form-select" id="course-level-search">
+                                    <option value="">Все уровни</option>
+                                    <option value="Beginner">Начальный</option>
+                                    <option value="Intermediate">Средний</option>
+                                    <option value="Advanced">Продвинутый</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div id="courses-container" class="row g-4">
+                <!-- Курсы будут загружены через JavaScript -->
+            </div>
+
+            <nav id="courses-pagination" class="mt-4">
+                <ul class="pagination justify-content-center">
+                </ul>
+            </nav>
+        </section>
+
+        <section id="tutors" class="mb-5">
+            <h2 class="text-center mb-4">Наши репетиторы</h2>
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Поиск репетиторов</h5>
+                    <form id="tutor-search-form">
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="tutor-language-search" class="form-label">Предлагаемые языки</label>
+                                <select class="form-select" id="tutor-language-search">
+                                    <option value="">Все языки</option>
+                                </select>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="tutor-level-search" class="form-label">Уровень языка</label>
+                                <select class="form-select" id="tutor-level-search">
+                                    <option value="">Все уровни</option>
+                                    <option value="Beginner">Начальный</option>
+                                    <option value="Intermediate">Средний</option>
+                                    <option value="Advanced">Продвинутый</option>
+                                </select>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="table-responsive">
+                <table class="table table-hover table-striped">
+                    <thead class="table-primary">
+                        <tr>
+                            <th>Имя репетитора</th>
+                            <th>Уровень языка</th>
+                            <th>Языки обучения</th>
+                            <th>Опыт (лет)</th>
+                            <th>Почасовая ставка (руб/час)</th>
+                            <th>Действия</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tutors-table-body">
+                    </tbody>
+                </table>
+            </div>
+
+            <div id="no-tutors-message" class="text-center text-muted d-none">
+                <p>Репетиторы не найдены</p>
+            </div>
+        </section>
+        <section id="resources-map" class="mb-5">
+            <h2 class="text-center mb-4">Карта учебных ресурсов</h2>
+            <p class="text-center text-muted mb-4">
+                Найдите ближайшие места для изучения иностранных языков: библиотеки, языковые клубы, культурные центры
+            </p>
+            
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="card-title">Фильтры</h5>
+                    <div class="row g-3">
+                        <div class="col-md-12">
+                            <label class="form-label">Тип ресурса</label>
+                            <div class="d-flex flex-wrap gap-2">
+                                <div class="form-check">
+                                    <input class="form-check-input map-filter" type="checkbox" id="filter-educational" value="educational" checked>
+                                    <label class="form-check-label" for="filter-educational">
+                                        Образовательные учреждения
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input map-filter" type="checkbox" id="filter-library" value="library" checked>
+                                    <label class="form-check-label" for="filter-library">
+                                        Публичные библиотеки
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input map-filter" type="checkbox" id="filter-cultural" value="cultural" checked>
+                                    <label class="form-check-label" for="filter-cultural">
+                                        Культурные центры
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input map-filter" type="checkbox" id="filter-cafe" value="cafe" checked>
+                                    <label class="form-check-label" for="filter-cafe">
+                                        Языковые кафе
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input map-filter" type="checkbox" id="filter-club" value="club" checked>
+                                    <label class="form-check-label" for="filter-club">
+                                        Языковые клубы
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="map" style="width: 100%; height: 500px;" class="rounded shadow"></div>
+        </section>
+    </main>
+
+    <footer id="contacts" class="bg-dark text-white py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h5>О школе IlyaLingua</h5>
+                    <p>Языковая школа для изучения иностранных языков с опытными преподавателями.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Контакты</h5>
+                    <p>
+                        <strong>Телефон:</strong> +7 (495) 123-45-67<br>
+                        <strong>Email:</strong> info@IlyaLingua.ru<br>
+                        <strong>Адрес:</strong> г. Москва, ул. Образцова, д. 15
+                    </p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h5>Социальные сети</h5>
+                    <div class="d-flex gap-3">
+                        <a href="#" class="text-white">ВКонтакте</a>
+                        <a href="#" class="text-white">Telegram</a>
+                        <a href="#" class="text-white">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="my-3">
+            <div class="text-center">
+                <p class="mb-0">&copy; 2025 IlyaLingua. Все права защищены.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+
+    <div class="modal fade" id="orderModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="orderModalTitle">Оформление заявки</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="orderForm">
+                        <input type="hidden" id="order-type" value="">
+                        <input type="hidden" id="order-id" value="">
+                        
+                        <div class="mb-3">
+                            <label class="form-label" id="order-name-label">Название курса</label>
+                            <input type="text" class="form-control" id="order-name" readonly>
+                        </div>
+
+                        <div class="mb-3" id="teacher-field">
+                            <label class="form-label">Преподаватель</label>
+                            <input type="text" class="form-control" id="order-teacher" readonly>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="order-date" class="form-label">Дата начала</label>
+                            <select class="form-select" id="order-date" required>
+                                <option value="">Выберите дату</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="order-time" class="form-label">Время занятия</label>
+                            <select class="form-select" id="order-time" required disabled>
+                                <option value="">Сначала выберите дату</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3" id="duration-field">
+                            <label class="form-label">Продолжительность курса</label>
+                            <input type="text" class="form-control" id="order-duration-display" readonly>
+                        </div>
+
+                        <div class="mb-3 d-none" id="tutor-duration-field">
+                            <label for="order-tutor-duration" class="form-label">Продолжительность занятия (часы)</label>
+                            <input type="number" class="form-control" id="order-tutor-duration" min="1" max="40" value="1">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="order-persons" class="form-label">Количество студентов</label>
+                            <input type="number" class="form-control" id="order-persons" min="1" max="20" value="1" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Дополнительные параметры обучения</label>
+
+                            <div id="auto-options" class="mb-2"></div>
+
+                            <div class="form-check">
+                                <input class="form-check-input order-option" type="checkbox" id="option-supplementary">
+                                <label class="form-check-label" for="option-supplementary">
+                                    Дополнительные учебные материалы (+2000 руб за студента)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input order-option" type="checkbox" id="option-personalized">
+                                <label class="form-check-label" for="option-personalized">
+                                    Индивидуальные занятия (+1500 руб за неделю)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input order-option" type="checkbox" id="option-excursions">
+                                <label class="form-check-label" for="option-excursions">
+                                    Культурные экскурсии (+25% к стоимости)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input order-option" type="checkbox" id="option-assessment">
+                                <label class="form-check-label" for="option-assessment">
+                                    Оценка уровня владения языком (+300 руб)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input order-option" type="checkbox" id="option-interactive">
+                                <label class="form-check-label" for="option-interactive">
+                                    Доступ к интерактивной онлайн-платформе (+50% к стоимости)
+                                </label>
+                            </div>
+                        </div>
+                        <div class="alert alert-info">
+                            <h5>Общая стоимость</h5>
+                            <h3 id="order-total-price">0 руб</h3>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Отмена</button>
+                    <button type="button" class="btn btn-primary" id="submitOrderBtn">Отправить</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
